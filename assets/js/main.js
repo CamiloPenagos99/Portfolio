@@ -40,6 +40,7 @@ const RenderImagenLigthBox = (imagen)=>{
     imagenLight.src=imagen;
     contenedorLight.classList.toggle("show");
     imagenLight.classList.toggle("showImage");
+    menuHamburger.style.opacity='0';
 }
 
 //Cerrar el contenedor de ligth box
@@ -48,5 +49,6 @@ const RenderImagenLigthBox = (imagen)=>{
         if(e.target !== imagenLight){
             contenedorLight.classList.toggle("show");
             imagenLight.classList.toggle("showImage");
+            menuHamburger.style.opacity='1';
         }
     })
